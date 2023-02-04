@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>請輸入第一個數字:</h1><input id="a" type="text"><br><h1>請輸入第二個數字:</h1><input id="b" type="text">
+        <button onclick="sum()">+</button><button onclick="minus()">-</button><button onclick="price()">x</button><button onclick="min()">/</button>
+        <h2>=<b><output style="width: 400px;" id="c"></output></b></h2>
+        <script>
+            function sum(){
+                var a=parseInt(document.getElementById('a').value);
+                var b=parseInt(document.getElementById('b').value);
+                document.getElementById('c').value=a+b
+            }
+            function minus(){
+                var a=parseInt(document.getElementById('a').value);
+                var b=parseInt(document.getElementById('b').value);
+                document.getElementById('c').value=a-b
+            }
+            function price(){
+                var a=parseInt(document.getElementById('a').value);
+                var b=parseInt(document.getElementById('b').value);
+                document.getElementById('c').value=a*b
+            }
+            function min(){
+                var a=parseInt(document.getElementById('a').value);
+                var b=parseInt(document.getElementById('b').value);
+                document.getElementById('c').value=a/b
+            }
+        </script>
+    </body>
+</html>
